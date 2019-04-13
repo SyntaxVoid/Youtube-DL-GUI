@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GUIDefaults.hpp" />
+    <ClInclude Include="Source\IconResources.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\IconResources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\browse18x18icon.ico" />
+    <Image Include="Images\paste18x18icon.ico" />
+    <Image Include="Images\Shark18x18Icon.ico" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{5D160273-6326-4C19-9761-2C374276AD88}</ProjectGuid>
@@ -142,21 +157,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GUIDefaults.hpp" />
-    <ClInclude Include="IconResources.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="IconResources.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="browse18x18icon.ico" />
-    <Image Include="paste18x18icon.ico" />
-    <Image Include="Shark18x18Icon.ico" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
